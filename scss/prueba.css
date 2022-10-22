@@ -1,0 +1,30 @@
+.cubos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Max-width = del valor hacia abajo */
+  /* Min-width = del valor hacia arriba */
+  /* Min-width = del valor hacia arriba */
+}
+.cubos .cubo {
+  width: 300px;
+  height: 300px;
+  background-color: tomato;
+}
+@media (max-width: 700px) and (min-width: 400px) {
+  .cubos .cubo {
+    background-color: yellowgreen;
+  }
+}
+@media (min-width: 700px) {
+  .cubos .cubo {
+    background-color: blueviolet;
+  }
+}
+.cubos .cubo:hover {
+  background-color: yellow;
+}
+
+.cubos div:nth-child(1) {
+  background-color: orange;
+}/*# sourceMappingURL=prueba.css.map */
